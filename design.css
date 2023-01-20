@@ -31,7 +31,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: white;
-	padding: 200px 200px;
+	padding: 227px 200px;
 }
 		
 p {
@@ -53,22 +53,23 @@ a {
 	text-decoration:none;
 	color:black;
 }
-
-table {
-	border-collapse: collapse;
-	width: 100%;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 2px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #2196F3;
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+.grid-item:hover{
+background-color: hsl(48, 100%, 50%);
 }
 
-th, td {
-	padding: 8px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
-
-}
-
-tr:hover {
-	background-color: hsl(48, 100%, 50%);
-}
 
 p:not(#para)::first-letter {
 	font-size: 200%;
@@ -84,6 +85,9 @@ a[href="https://pitchfork.com"] {
 }
 div ~ h2 {
 	background-color: #66ccff;
+}
+modal .overlay ~ * > *, .card > * {
+	width:100%;
 }		
 
 
